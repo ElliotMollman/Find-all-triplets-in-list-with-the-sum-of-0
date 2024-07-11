@@ -1,5 +1,19 @@
 #Coding question, Find all triplets in list with the sum of 0
-#Oroginal answer by Elliot Mollman
+#Original answer by Elliot Mollman
+
+#My solution looks like this where I would add the numbers in parentheses. 
+#------Loop 1------
+#(3), (6), (-4), 1, -2, -1
+#(3), 6, (-4), (1), -2, -1
+#(3), 6, -4, (1), (-2), -1
+#(3), 6, -4, 1, (-2), (-1)
+#------Loop 2------
+#3, (6), (-4), (1), -2, -1
+#3, (6), -4, (1), (-2), -1
+#3, (6), -4, 1, (-2), (-1)
+#------Loop 3------
+#3, 6, (-4), (1), (-2), -1
+#And so on........
 
 def check_anwer(len_of_list, List):
         start = 0
